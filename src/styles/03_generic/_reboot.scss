@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family-base;
+    font-size: initial;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: left;
+    background-color: $body-bg;
+}

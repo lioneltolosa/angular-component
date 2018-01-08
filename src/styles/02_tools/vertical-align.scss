@@ -1,0 +1,22 @@
+@mixin v-align($position-after: 'false', $value: middle) {
+    @if $position-after == 'true' {
+        &::after {
+            content: $empty-tab;
+            width: 1px;
+            height: 100%;
+            display: inline-block;
+            vertical-align: $value;
+            margin-left: -1px;
+        }
+    } @else {
+        &::before {
+            content: $empty-tab;
+            width: 1px;
+            height: 100%;
+            display: inline-block;
+            vertical-align: $value;
+            margin-right: -1px;
+        }
+    }
+
+}
