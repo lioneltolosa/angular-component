@@ -1,0 +1,2 @@
+# angular-component
+angular-component
