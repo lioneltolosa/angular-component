@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/nav";
+
+.header-nav {
+    background-color: $blue;
+
+    a:hover {
+        color: $green;
+    }
+
+    .subheader {
+        @extend .p-0;
+        
+        margin-top: 8rem;
+    }
+
+    .nav-tabs {
+        .nav-item {
+            .nav-link {
+                padding-bottom: 2.8rem;
+                color: $white;
+
+                &.active {
+                    border-bottom: 0.4rem solid $green;
+                    margin-right: 1rem;
+                    margin-left: 1rem;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/utilities';
+
+.view-header-tabs {
+    @extend .px-0;
+
+	h1 {
+		@extend .display-2;
+		color: $white;
+	}
+
+	.justify-content-start {
+		a {
+			font-size: 1.4rem;
+			color: $white;
+			font-weight: 600;
+			padding: 1.8rem 1rem 1.2rem 1rem;
+		}
+    }
+}
+
+.header-tabs {
+    background-color: $blue-nav;
+
+    .justify-content-start {
+        @include make-container;
+        @include make-container-max-widths;
+
+        .nav-item {
+            .nav-link {
+                &.active {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+.tab-content {
+    background: $white;
+    padding-top: 3.5rem;
+    
+    .tab-pane {
+        @include make-container;
+        @include make-container-max-widths;
+    }
+}

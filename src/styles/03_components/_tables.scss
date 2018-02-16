@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/tables";
+
+.content-table {
+    padding-top: 4rem;
+
+    h1 {
+        @extend .display-3;
+
+        padding-top: 0.4rem;
+        margin: 0; 
+        color: $blue;
+    }
+
+    .ctn-form {
+        display: flex;
+        justify-content: flex-end;
+
+        .col-form-label {
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+.form-group {
+    position: relative;
+
+    .select-large {
+        width: 255px;
+        margin-right: 1rem;
+    }
+    
+    .select-small {
+        width: 75px;
+        margin-right: 1.5rem;
+    }
+}
+
+.table {
+    thead {
+        tr {
+            background-color: $gray-100;
+        }
+    }
+    
+    .icon-mail {
+        color: #7f7f7f;
+        font-size: 10px;
+    }
+
+    .sub-header {
+        border: solid 1px #d5d5d5;
+    }
+}
