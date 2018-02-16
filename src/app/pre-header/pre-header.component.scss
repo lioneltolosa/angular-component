@@ -1,0 +1,19 @@
+.pre-header {
+    background: salmon;
+    color: white;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    & > div .icon-headphones {
+        font-size: 3rem;
+    }
+
+    & > div .title {
+        font-size: 2rem;
+    }
+
+    & > div .languaje {
+        font-size: 2rem;
+    }
+}
