@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PreHeaderComponent } from './pre-header/pre-header.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
+import { TabsResponsiveComponent } from './tabs-responsive/tabs-responsive.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ContentComponent } from './content/content.component';
     AppComponent,
     PreHeaderComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    TabsResponsiveComponent
   ],
   imports: [
     BrowserModule
