@@ -1,3 +1,6 @@
+label {
+    font-family: 'Roboto Condensed', sans-serif;  
+}
 
 .is-required {
     label::after {
@@ -9,18 +12,6 @@
         overflow: visible;
     }
 }
-
-.is-demanded {
-    label::before {
-        font-weight: 800;
-        //content: $plus-tab;
-        color: green;
-        position: absolute;
-        left: -6px;
-        overflow: visible;
-    }
-}
-
 
 .has-danger {
 
@@ -38,7 +29,7 @@
 .invalid-feedback {
     visibility: hidden;
     font-size: 1.125rem;
-    margin: 0em 172px 0;
+    margin: 5px 14px;
     font-style: italic;
     display: inline-block;
 }
@@ -47,45 +38,8 @@
     visibility: visible;
 }
 
-.content-space {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .content-label-large {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-// select {
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     background: $custom-select-indicator no-repeat right $custom-select-padding-x center;
-//     background-size: 1.4rem;
-// }
-
-// select::-ms-expand { 
-//     display: none;
-// }
-
-// fieldset {
-//     @extend .mb-3;
-
-//     border: 1px solid $gray-400;
-//     padding-top: 3rem;
-
-//     legend {
-//         background-color: $blue;
-//         font-size: 14px;
-//         font-weight: 600;
-//         height: 29px;
-//         color: $white;
-//         padding-top: 0.3rem;
-//         margin: 0;
-//         padding-left: 1.5rem;
-//         -moz-box-sizing: border-box;
-//         -webkit-box-sizing: border-box;
-//         box-sizing: border-box;
-//      }
-// }
