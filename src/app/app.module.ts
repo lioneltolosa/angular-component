@@ -7,6 +7,7 @@ import { PreHeaderComponent } from './pre-header/pre-header.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { TabsResponsiveComponent } from './tabs-responsive/tabs-responsive.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { TabsResponsiveComponent } from './tabs-responsive/tabs-responsive.compo
     PreHeaderComponent,
     HeaderComponent,
     ContentComponent,
-    TabsResponsiveComponent
+    TabsResponsiveComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule

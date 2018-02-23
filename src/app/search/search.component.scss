@@ -1,0 +1,40 @@
+.drop-cmd{
+    padding: 4rem;
+}
+
+.search-cmp {
+    border: solid 1px grey;
+    border-radius: 2em;
+    margin: 2rem 0;
+    padding: 0.125rem 1.25rem;
+    width: 255px;
+    height: 37px;
+    
+    .search-input {
+
+        background-color: blue;
+        border: none;
+        color: grey;
+        padding: 0 0.5em;
+        height: 31px;
+
+        &::placeholder {
+            color: grey;
+        }
+    }
+
+    .input-group-append {
+        font-size: 2rem;
+        padding: 2px 0px;
+
+        .input-group-text {
+            background-color: blue;
+            vertical-align: middle;
+            border: 0;
+            opacity: 0.3;
+            color: white;
+            font-size: 1.9rem;
+            padding: 0;
+        }
+    }
+}
