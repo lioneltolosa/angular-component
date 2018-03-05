@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { TabsResponsiveComponent } from './tabs-responsive/tabs-responsive.component';
 import { SearchComponent } from './search/search.component';
+import { JokeComponent } from './joke/joke.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     ContentComponent,
     TabsResponsiveComponent,
-    SearchComponent
+    SearchComponent,
+    JokeComponent
   ],
   imports: [
     BrowserModule
