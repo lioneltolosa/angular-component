@@ -10,6 +10,7 @@ import { TabsResponsiveComponent } from './tabs-responsive/tabs-responsive.compo
 import { SearchComponent } from './search/search.component';
 import { JokeComponent } from './joke/joke.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { JokeListComponent } from './joke-list/joke-list.component';
     TabsResponsiveComponent,
     SearchComponent,
     JokeComponent,
-    JokeListComponent
+    JokeListComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule

@@ -8,7 +8,6 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
   <h1>{{ setup}}</h1>
   <p> {{ punchline }}</p>
 `,
-    styleUrls: ['./joke.component.scss']
 })
 
 export class JokeComponent implements OnInit {
@@ -25,18 +24,18 @@ export class JokeComponent implements OnInit {
     }
 }
 
-let joke = new JokeComponent();
-console.log(joke.setup);
-console.log(joke.punchline);
+// let joke = new JokeComponent();
+// console.log(joke.setup);
+// console.log(joke.punchline);
 
-@NgModule({
-    imports: [BrowserModule],
-    declarations: [JokeComponent],
-    bootstrap: [JokeComponent]
-})
+// @NgModule({
+//     imports: [BrowserModule],
+//     declarations: [JokeComponent],
+//     bootstrap: [JokeComponent]
+// })
 
 export class AppModule {
 
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+// platformBrowserDynamic().bootstrapModule(AppModule);
