@@ -9,6 +9,7 @@ import { ContentComponent } from './content/content.component';
 import { TabsResponsiveComponent } from './tabs-responsive/tabs-responsive.component';
 import { SearchComponent } from './search/search.component';
 import { JokeComponent } from './joke/joke.component';
+import { JokeListComponent } from './joke-list/joke-list.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { JokeComponent } from './joke/joke.component';
     ContentComponent,
     TabsResponsiveComponent,
     SearchComponent,
-    JokeComponent
+    JokeComponent,
+    JokeListComponent
   ],
   imports: [
     BrowserModule

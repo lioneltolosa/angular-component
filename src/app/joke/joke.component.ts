@@ -14,7 +14,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 export class JokeComponent implements OnInit {
     setup: string;
     punchline: string;
-    
+
     constructor() {
         this.setup = "What did the cheese say when it looked in the mirror?"
         this.punchline = "Halloumi (Hello Me)"
@@ -23,7 +23,6 @@ export class JokeComponent implements OnInit {
     ngOnInit() {
 
     }
-
 }
 
 let joke = new JokeComponent();
