@@ -1,11 +1,11 @@
 <div class="container slider">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="row carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active"
-                 *ngFor="let slide of slides">
-                    <h3>{{slide.title}}</h3>
-                    <small>{{slide.date}}</small>
-                    <p>{{slide.text}}</p>
+            <div class="carousel-item active  col-4"
+                *ngFor="let slide of slides">
+                <h3>{{slide.title}}</h3>
+                <small>{{slide.date}}</small>
+                <p>{{slide.text}}</p>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
