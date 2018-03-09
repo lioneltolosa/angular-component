@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { JokeComponent } from './joke/joke.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
 import { SliderComponent } from './slider/slider.component';
+import { DomainModelComponent } from './domain-model/domain-model.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SliderComponent } from './slider/slider.component';
     SearchComponent,
     JokeComponent,
     JokeListComponent,
-    SliderComponent
+    SliderComponent,
+    DomainModelComponent
   ],
   imports: [
     BrowserModule

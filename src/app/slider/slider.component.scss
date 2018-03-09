@@ -5,3 +5,11 @@
 .carousel-inner {
     display: flex;
 }
+
+.headline-3 {
+    &:before {
+        height: 41px;
+        content: '';
+        border-left: 10px solid #00547b;
+    }
+}
