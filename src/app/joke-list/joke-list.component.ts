@@ -1,4 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+
+import {Component, OnInit} from '@angular/core';
+
+class joke {
+    public setup: string;
+    public punchline: string;
+    public hide: boolean;
+
+    constructor (setup: string, punchline: string) {
+        this.setup = setup;
+        this.punchline = punchline;
+        this.hide = true;
+    }
+
+    toggle() {
+        this.hide = !this.hide;
+    }
+}
 
 @Component({
   selector: 'app-joke-list',
@@ -8,32 +25,20 @@ import { Component, OnInit } from '@angular/core';
       <h4 class="card-title">{{joke.setup}}</h4>
       <p class="card-text" [hidden]="joke.hide">{{joke.punchline}}</p>
       <a class="btn btn-primary" 
-         (click)="toggle(joke)">Tell Me</a>
+         (click)="joke.toggle()">Tell Me</a>
   </div>
 `,
 })
 
 
 export class JokeListComponent implements OnInit {
-  jokes: Object[];
+  jokes: joke[];
   
   constructor() {
     this.jokes = [
-            {
-                setup: "What did the cheese say when it looked in the mirror?",
-                punchline: "Hello-Me (Halloumi)",
-                hide: true
-            },
-            {
-                setup: "What kind of cheese do you use to disguise a small horse?",
-                punchline: "Mask-a-pony (Mascarpone)",
-                hide: true
-            },
-            {
-                setup: "A kid threw a lump of cheddar at me",
-                punchline: "I thought ‘That’s not very mature’",
-                hide: true
-            },
+            new joke("Hola1", "Lio1"),
+            new joke("Hola2", "Lio2"),
+            new joke("Hola3", "Lio3"),
         ];
     }   
     
