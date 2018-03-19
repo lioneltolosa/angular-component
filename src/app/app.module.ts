@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -11,7 +12,8 @@ import { SearchComponent } from './search/search.component';
 import { JokeComponent } from './joke/joke.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
 import { SliderComponent } from './slider/slider.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
+import { JokeFormComponent } from './joke-form/joke-form.component';
+import { NgbootstrapComponent } from './ngbootstrap/ngbootstrap.component';
 
 
 @NgModule({
@@ -25,10 +27,12 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     JokeComponent,
     JokeListComponent,
     SliderComponent,
-    CheckboxComponent
+    JokeFormComponent,
+    NgbootstrapComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
