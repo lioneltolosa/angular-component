@@ -1,0 +1,40 @@
+.checkboxs-persons {
+    background-color: #F9EA43;
+    height: 30em;
+    padding-top: 3em;
+
+    .custom-control-label {
+        font-size: 1em;
+        color: white;
+        margin-bottom: 0;
+    
+        &::before {
+            border-radius: .25rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 19rem;
+            margin-top: 0.4rem;
+        }
+    
+        &::after {
+            padding-top: 2.2rem;
+            margin-left: 19.3rem;
+            background-size: 1rem;  
+        }
+    }
+    
+    .custom-control-input {
+        &:focus ~ .custom-control-label::before {
+            box-shadow: none;
+        }
+    }
+    
+    .custom-checkbox {
+        .custom-control-input:checked ~ .custom-control-label {
+          &::before {
+            background-color: #6D0545;
+          }
+        }
+    }
+}
+

@@ -14,6 +14,7 @@ import { JokeListComponent } from './joke-list/joke-list.component';
 import { SliderComponent } from './slider/slider.component';
 import { JokeFormComponent } from './joke-form/joke-form.component';
 import { NgbootstrapComponent } from './ngbootstrap/ngbootstrap.component';
+import { CheckboxsPersonalizadosComponent } from './checkboxs-personalizados/checkboxs-personalizados.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { NgbootstrapComponent } from './ngbootstrap/ngbootstrap.component';
     JokeListComponent,
     SliderComponent,
     JokeFormComponent,
-    NgbootstrapComponent
+    NgbootstrapComponent,
+    CheckboxsPersonalizadosComponent
   ],
   imports: [
     BrowserModule,
