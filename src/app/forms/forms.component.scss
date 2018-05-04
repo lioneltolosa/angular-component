@@ -1,0 +1,138 @@
+$height: 36px;
+
+@mixin size-inputs {
+    @for $i from 1 through 10 {
+        .size-#{$i} {
+            width: 35px + 6px * $i !important;
+            height: $height;
+            text-align: center;
+            padding: 5px 10px;
+
+            &::placeholder {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@include size-inputs;
+
+.dynamic-input {
+    display: flex;
+}
+
+.is-required {
+    label::after {
+        font-weight: 800;
+        content: '*';
+        color: $green;
+        overflow: visible;
+    }
+}
+
+.is-demanded {
+    label::before {
+        content: $mandatory-circle;
+        color: $blue;
+        position: absolute;
+        left: -15px;
+        overflow: visible;
+    }
+}
+
+.has-info {
+    position: relative;
+
+    .icon-wrapper::before {
+        position: absolute;
+        top: 1rem;
+        left: 19rem;
+        visibility: visible;
+        content: '\e807';
+        font-size: 1.3rem;
+    }
+}
+
+.has-danger {
+
+    .invalid-feedback {
+        visibility: visible;
+    }
+
+    input,
+    select {
+        background-color: #faefef;
+        border-color: $red;
+
+        &:focus {
+            border-color: $red;
+            box-shadow: 0 0 0 $input-focus-width rgba($red, .25);
+        }
+    }
+}
+
+.form-group {
+    margin-bottom: 0.2rem;
+}
+
+.invalid-feedback {
+    display: flex;
+    margin-bottom: 0.5rem;
+    visibility: hidden;
+    font-size: 1.125rem;
+}
+
+.is-invalid + .invalid-feedback {
+    visibility: visible;
+}
+
+.content-space {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-label-large {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: $custom-select-indicator no-repeat right $custom-select-padding-x center;
+    background-size: 1.4rem;
+}
+
+select::-ms-expand { 
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+fieldset {
+    @extend .mb-3;
+
+    border: 1px solid $gray-400;
+    padding-top: 2rem;
+
+    legend {
+        background-color: $blue;
+        font-size: 14px;
+        font-weight: 600;
+        height: 29px;
+        color: $white;
+        padding-top: 0.3rem;
+        margin: 0;
+        padding-left: 1.5rem;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+     }
+}
+
+button:focus {
+    outline: 0;
+}
