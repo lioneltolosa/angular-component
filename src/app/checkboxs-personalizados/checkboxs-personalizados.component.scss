@@ -1,11 +1,15 @@
+h2 {
+    color: #33221F;
+}
+
 .checkboxs-persons {
-    background-color: #F9EA43;
+    background-color: #FD9D39;
     height: 30em;
-    padding-top: 3em;
+    padding-top: 2em;
 
     .custom-control-label {
-        font-size: 1em;
-        color: white;
+        font-size: 1.5em;
+        color: #C33149;
         margin-bottom: 0;
     
         &::before {
