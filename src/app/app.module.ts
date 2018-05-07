@@ -16,6 +16,7 @@ import { JokeFormComponent } from './joke-form/joke-form.component';
 import { NgbootstrapComponent } from './ngbootstrap/ngbootstrap.component';
 import { CheckboxsPersonalizadosComponent } from './checkboxs-personalizados/checkboxs-personalizados.component';
 import { FormsComponent } from './forms/forms.component';
+import { InputsDinamicsSizeMixinsSassComponent } from './inputs-dinamics-size-mixins-sass/inputs-dinamics-size-mixins-sass.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { FormsComponent } from './forms/forms.component';
     JokeFormComponent,
     NgbootstrapComponent,
     CheckboxsPersonalizadosComponent,
-    FormsComponent
+    FormsComponent,
+    InputsDinamicsSizeMixinsSassComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+$height: 36px;
+
+@mixin size-inputs {
+    @for $i from 1 through 10 {
+        .size-#{$i} {
+            width: 35px + 6px * $i !important;
+            height: $height;
+            text-align: center;
+            padding: 5px 10px;
+
+            &::placeholder {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@include size-inputs;
