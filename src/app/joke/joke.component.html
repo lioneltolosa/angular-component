@@ -4,10 +4,10 @@
   </h4>
   <p class="card-text"
      [hidden]="data.hide">{{data.punchline}}</p>
-  <a (click)="data.toggle()"
+  <button (click)="data.toggle()"
      class="btn btn-warning">Tell Me
-  </a>
-  <a (click)="deleteItem()"
+  </button>
+  <button (click)="deleteItem()"
      class="btn btn-danger">Delete
-  </a>
+  </button>
 </div>
