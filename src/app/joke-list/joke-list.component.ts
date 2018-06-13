@@ -1,50 +1,35 @@
-
 import {Component, OnInit} from '@angular/core';
-
-class joke {
-    public setup: string;
-    public punchline: string;
-    public hide: boolean;
-
-    constructor (setup: string, punchline: string) {
-        this.setup = setup;
-        this.punchline = punchline;
-        this.hide = true;
-    }
-
-    toggle() {
-        this.hide = !this.hide;
-    }
-}
+import {Joke} from '../joke';
 
 @Component({
   selector: 'app-joke-list',
-  template: `
-  <div class="card card-block"
-      *ngFor="let joke of jokes">
-      <h4 class="card-title">{{joke.setup}}</h4>
-      <p class="card-text" [hidden]="joke.hide">{{joke.punchline}}</p>
-      <a class="btn btn-primary" 
-         (click)="joke.toggle()">Tell Me</a>
-  </div>
-`,
+  templateUrl: './joke-list.component.html',
+  styleUrls: ['./joke-list.component.scss']
 })
 
 
 export class JokeListComponent implements OnInit {
-  jokes: joke[];
+
+  jokes: Joke[];
   
   constructor() {
     this.jokes = [
-            new joke("Hola1", "Lio1"),
-            new joke("Hola2", "Lio2"),
-            new joke("Hola3", "Lio3"),
+        new Joke("Es hora de que investiges por tu cuenta", "lio1"),
+        new Joke("Este es el curso de angular, Vamos a subirle unos gradillos al aire", "lio1"),
+        new Joke("Esta harcodeado, Esta harcodeado, Esta Harcodeado", "lio1"),
         ];
     }   
+
+    addJoke(joke) {
+        this.jokes.unshift(joke);
+      }
     
-    toggle(joke) {
-        joke.hide = !joke.hide;
-    }
+      deleteJoke(joke) {
+        let indexToDelete = this.jokes.indexOf(joke);
+        if (indexToDelete !== -1) {
+          this.jokes.splice(indexToDelete, 1);
+        }
+      }
 
   ngOnInit() {
   }
