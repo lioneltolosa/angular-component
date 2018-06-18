@@ -1,13 +1,19 @@
 <div class="card card-block">
-  <h4 class="card-title">
-  	{{data.setup}}
-  </h4>
-  <p class="card-text"
-     [hidden]="data.hide">{{data.punchline}}</p>
-  <button (click)="data.toggle()"
-     class="btn btn-warning">Tell Me
-  </button>
-  <button (click)="deleteItem()"
-     class="btn btn-danger">Delete
-  </button>
+    <h4 class="card-title">
+        <ng-content select=".setup"></ng-content>
+    </h4>
+    <p class="card-text"
+       [hidden]="data.hide">
+     <ng-content select=".punchline"></ng-content>
+    </p>
+     <button type="button"
+            class="btn btn-warning"
+            (click)="data.toggle()">
+                Hello World
+    </button>
+    <button type="button"
+            class="btn btn-info"
+            (click)="deleteItem()">
+                Delete
+    </button>
 </div>
