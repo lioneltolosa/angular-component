@@ -1,0 +1,32 @@
+<div class="container ctn-form">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Id</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Enter Id">
+                <small class="form-text text-muted">Hello Id.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Enter Name">
+                <small class="form-text text-muted">Hello Name.</small>
+            </div>
+
+            <button type="submit"
+                    class="btn btn-success"
+                    (click)="addItem()">Add</button>
+        </div>
+        <div class="col-6">
+            <ul class="list-group">
+                <li *ngFor='let item of items' class="list-group-item">
+                    <h3>{{ item.id}}</h3>
+                    <p>{{ item.name}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
